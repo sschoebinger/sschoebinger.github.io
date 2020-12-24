@@ -47,8 +47,8 @@ section:target {
   display: block;
 }
 
-section#blog {
-  /* Show #blog by default */
+section#home {
+  /* Show #home by default */
   display: block;
 }
 
