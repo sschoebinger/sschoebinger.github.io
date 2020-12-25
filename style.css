@@ -52,10 +52,6 @@ section#home {
   display: block;
 }
 
-section#portfolio ul.nobullet li::marker {
-  content: "-  ";
-}
-
 .flex-container {
   /* We first create a flex layout context */
   display: flex;
@@ -134,10 +130,6 @@ ol,
 article {
   max-width: 60ch; /* Limit line-length to 60 characters */
   margin-bottom: 0.6em;
-}
-
-ul {
-  list-style-type: none;
 }
 
 ul li::marker {
