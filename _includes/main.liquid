@@ -13,12 +13,13 @@
     />
 
     <!-- Recommended minimum -->
-    <meta property="og:title" content="Sebastian Schoebinger" />
+    <meta property="og:url" content="{{metadata.url}}{{page.url}}" />
+    <meta property="og:title" content="{{metadata.title}}" />
     <meta
       property="og:description"
-      content="Sebastian Schoebinger - Software Engineer"
+      content="{{metadata.description}}"
     />
-    <meta property="og:image" content="img/site-image.png" />
+    <meta property="og:image" content="{{metadata.url}}/img/site-image.png" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <!-- You could also inline the stylesheet -->
