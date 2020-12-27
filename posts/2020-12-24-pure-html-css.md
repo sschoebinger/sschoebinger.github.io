@@ -29,7 +29,7 @@ I started with [john-doe.neocities.org]("https://john-doe.neocities.org/) as a r
 
 It was okay to set all this up (with basic HTML and CSS knowledge) and it has some advantages for sure:
 
-- 100% control of designed and structure
+- 100% control of design and structure
 - fast (lighthouse 100% on first try)
 - easy to deploy (e.g. github pages without CI/CD)
 - you learn the basic again
@@ -42,4 +42,4 @@ It was okay to set all this up (with basic HTML and CSS knowledge) and it has so
 
 But even with my few pages I already had the wish to **separate my content into different files** and if you start with multiple files you definitely need _templating_. In addition I always like to write content in _markdown_ which is no mandatory feature but nice to have.
 
-**I'll definitely test some of the static site generators and see what is the cost for having templating and markdown support.**
+**I'll definitely test some of the static site generators and see what is the cost of having templating and markdown support.**
