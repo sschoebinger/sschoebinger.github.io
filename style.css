@@ -5,7 +5,7 @@
 
   /* Color scheme */
 
-  --textcolor: #121212;
+  --textcolor: #242a2e;
   --bgcolor: #fff;
   --highlight: #2749c9;
 }
@@ -13,7 +13,7 @@
 @media (prefers-color-scheme: dark) {
   * {
     --textcolor: #dadada;
-    --bgcolor: #141414;
+    --bgcolor: #161c21;
     --highlight: #ffc400;
   }
 }
