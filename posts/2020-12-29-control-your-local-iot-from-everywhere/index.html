@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Sebastian Schoebinger</title>
+    <meta
+      name="description"
+      content="Sebastian Schoebinger - Software Engineer"
+    />
+
+    <!-- Recommended minimum -->
+    <meta property="og:url" content="https://sschoebinger.github.io/posts/2020-12-29-control-your-local-iot-from-everywhere/" />
+    <meta property="og:title" content="Sebastian Schoebinger" />
+    <meta
+      property="og:description"
+      content="Sebastian Schoebinger - Software Engineer"
+    />
+    <meta property="og:image" content="https://sschoebinger.github.io/img/site-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- You could also inline the stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="/">Sebastian Schoebinger</a>
+      </h1>
+      <nav>
+        <a href="/about">About</a>
+        <a href="/">Blog</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/impressum">Legal</a>
+        <!-- <a href="#portfolio">Portfolio</a> -->
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <!-- HOME -->
+        
+<article>
+    <h1>Control your local iot from everywhere</h1>
+
+    <p><em>The aim of this blog post is to describe two approaches how to control your local node red installation from the internet (cheep and secure). I'll not describe all the details, most of the parts are already described by others and google will help you find the right tutorials. If you need some hints or if you have a question about my iot setup you can contact me on <a href="https://twitter.com/sschoebi">twitter</a>.</em></p>
+<img src="/img/2020-12-29-iot-from-everywhere.png" alt="control your local iot from everywhere" style="width: 100%;" loading="lazy">
+<br/>
+<br/>
+<br/>
+<p>A few months back when we moved to another house there was this garage door which was already electric powered but not connected. I had to use the dedicated remote control to open and close it. Especially when I return with my son and the two dogs I often thought &quot;please let me just say: Siri open/close the garage&quot;.</p>
+<p><strong>This was the time when I had the first iot use case that was useful.</strong></p>
+<p>Building that iot use case was fairly simple, I used a <a href="https://shelly.cloud/products/shelly-1-smart-home-automation-relay/">shelly 1</a> to control the garage door operator, connected that shelly to a mqtt broker installed on a raspberry pi 4 in my local network and installed node red on the raspberry pi to define the iot logic.</p>
+<p>One thing which was first not trivial: <strong>how can I control this node red installation from remote?</strong> Without having a public ip address representing the raspberry pi (which I don't want due to security concerns).</p>
+<p>The first and simplest solution was using a telegram bot. There is already a <a href="https://flows.nodered.org/node/node-red-contrib-telegrambot">node red plugin</a> that can be used and there are already tutorials out there how to configure it. I use that bot to remind me to close the garage door after 9 p.m. if it is still open. But for daily usage voice control is much more convenient than writing to a bot.</p>
+<p>But unfortunately (at that time) it was not possible to create Siri shortcuts that interact with telegram (bots). <strong>So I needed a generic solution that allowed me to create my Siri shortcut.</strong></p>
+<p>After some investigation <a href="https://cloud.google.com/pubsub/docs/overview">google pub sub</a> or <a href="https://pusher.com/">pusher</a> seemed to be a good solution for my problem. It is fully managed, cheep (if you don't have a lot of messages) and node red can connect to it.</p>
+<p>The final solution to get my &quot;Siri please open the garage&quot; shortcut is, a function hosted on <a href="https://vercel.com/dashboard">vercel</a> which gets an API key and the command (open or close).</p>
+<p><code>https://host.com/myfunction?apikey=&lt;thekey&gt;&amp;command=open</code></p>
+<p>This function can be called by a static url which can be used in the Siri shortcut. The function forwards the command into google pub sub where it gets consumed by my local node red installation which can trigger the appropriate action to open or close the garage door.</p>
+<br/>
+<p>The price of this setup is:</p>
+<ul>
+<li>you have to pay for the electricity consumed by the raspberry pi</li>
+<li>the function on vercel is for free</li>
+<li>google pub sub costs $0.01 per month (pusher has a complete free tier)</li>
+</ul>
+<br/>
+This is an overview of my current setup:
+<br/>
+<br/>
+<img src="/img/2020-12-29-node-red-diagram.png" alt="my iot setup" style="width: 100%;" loading="lazy">
+
+</article>
+      </section>
+    </main>
+  </body>
+</html>
