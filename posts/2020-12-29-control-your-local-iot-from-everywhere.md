@@ -1,5 +1,6 @@
 ---
 pageTitle: Control your local iot from everywhere
+description: Describes two approaches how to control your local node red installation from the internet (cheep and secure)
 ---
 
 _The aim of this blog post is to describe two approaches how to control your local node red installation from the internet (cheep and secure). I'll not describe all the details, most of the parts are already described by others and google will help you find the right tutorials. If you need some hints or if you have a question about my iot setup you can contact me on [twitter](https://twitter.com/sschoebi)._

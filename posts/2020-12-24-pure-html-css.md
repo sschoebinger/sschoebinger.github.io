@@ -1,5 +1,6 @@
 ---
 pageTitle: pure HTML/CSS webpage that lasts long
+description: how to build simple website with HTML and CSS only (and how it went)
 ---
 
 I read a few times during the last days that creating a web page with **only HTML and CSS**, has the advantage of not being forced to update your frameworks again and again. It is a must for all my side projects that the effort for maintenance is as low as possible (otherwise they get outdated and die).
