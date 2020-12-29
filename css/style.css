@@ -8,7 +8,7 @@
   --textcolor: #242a2e;
   --bgcolor: #fff;
   --highlight: #2749c9;
-  --boldtextcolor: #659bff;
+  --boldtextcolor: #242a2e;
 }
 
 @media (prefers-color-scheme: dark) {
