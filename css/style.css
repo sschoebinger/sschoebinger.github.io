@@ -8,6 +8,7 @@
   --textcolor: #242a2e;
   --bgcolor: #fff;
   --highlight: #2749c9;
+  --boldtextcolor: #659bff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +16,7 @@
     --textcolor: #dadada;
     --bgcolor: #161c21;
     --highlight: #ffc400;
+    --boldtextcolor: #ffdf65;
   }
 }
 
@@ -109,7 +111,7 @@ header {
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 1.5em;
   flex: 1; /* pushes nav to the right */
   white-space: nowrap;
   padding: 0 5vw 0.5em 0;
@@ -131,7 +133,7 @@ a:hover {
 }
 
 section h1 {
-  font-size: 1em;
+  font-size: 1.3em;
   margin: 0 0 1em 0;
 }
 
@@ -166,7 +168,8 @@ ol {
 
 b,
 strong {
-  font-weight: 600;
+  font-weight: 500;
+  color: var(--boldtextcolor);
 }
 
 small {

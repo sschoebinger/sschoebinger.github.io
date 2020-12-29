@@ -36,7 +36,7 @@ It was okay to set all this up (with basic HTML and CSS knowledge) and it has so
 
 <br/>
 
-<img src="/img/2020-12-24-lighthouse.png" alt="lighthouse 100%" style="width: 60%;">
+<img src="/img/2020-12-24-lighthouse.png" alt="lighthouse 100%" style="width: 60%;" loading="lazy">
 
 <br/>
 
