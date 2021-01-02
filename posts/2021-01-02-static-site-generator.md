@@ -1,7 +1,7 @@
 ---
 pageTitle: Is it worth to use a static site generator?
 description: pros and cons of using a static site generator vs plain HTML and CSS
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 ---
 
 <img src="/img/2020-01-02-html-css-vs-11ty.png" alt="html/css vs 11ty" style="width: 100%;" loading="lazy">
