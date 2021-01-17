@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Sebastian Schoebinger</title>
+    <meta
+      name="description"
+      content="Sebastian Schoebinger - Software Engineer"
+    />
+
+    <!-- Recommended minimum -->
+    <meta property="og:url" content="https://sschoebinger.github.io/posts/2021-01-17-website-metrics/" />
+    <meta property="og:title" content="Website metrics without tracking the user" />
+    <meta
+      property="og:description"
+      content="how to get basic website metrics without using google analytics"
+    />
+    <meta property="og:image" content="https://sschoebinger.github.io/img/site-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- You could also inline the stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script async defer data-domain="sschoebinger.github.io" src="https://plausible.io/js/plausible.js"></script>
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9ae4d6b60f054ae2aba7eb16f93a3f47"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="/">Sebastian Schoebinger</a>
+      </h1>
+      <nav>
+        <a href="/about">About</a>
+        <a href="/">Blog</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/impressum">Legal</a>
+        <!-- <a href="#portfolio">Portfolio</a> -->
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <!-- HOME -->
+        
+<article>
+    <h1>Website metrics without tracking the user</h1>
+
+    <p>During Christmas holidays I started this blog and wrote a few articles in the following weeks. I decided to host my blog with <a href="https://pages.github.com/">github pages</a> and after some time I started asking myself, does anyone read that what I write? Unfortunately <a href="https://pages.github.com/">github pages</a> doesn't provide any metrics about the usage of my website which forced me to add another analytics tracker or I had to host my website somewhere else. As I don't wanted to move away from <a href="https://pages.github.com/">github pages</a> the first thing that came to my mind was adding <strong>google analytics</strong> to my website.</p>
+<p>But as an user I don't like, that all I do is being tracked by a few companies and I didn't like the idea of adding the same tracker to my website.</p>
+<p>After a short search I found <a href="https://plausible.io/">plausible</a> which says about itself it is simple, hosted in the EU, 100% self-funded and independent - thats great! Fortunately it has a free trail period of one month which I used to test it. Afterwards it costs $6 per month for up to 10k monthly page views. That feels expensive for basic website metrics of a personal noncommercial website.</p>
+<p><strong>10k page views is that much?</strong> One of my blog posts got a few retweets on twitter, nothing special but it produced about 1k page views in 24h. It is very likely that the 10k plan is enough for my blog but if you get more retweets, a good rank at google or hit the first page of hacker news it is very likely that the 10k plan is not enough anymore. But even if never exceed the 10k page views because you write only one blog post each one or two months you still have to pay $6 per month to see your ~1k monthly page views.</p>
+<p>What a dilemma, <a href="https://plausible.io/">plausible</a> is a great product but it has <a href="https://plausible.io/#pricing">no pricing tier</a> that fits the needs of a small personal noncommercial website. I decided to try another alternative to <strong>google analytics</strong> which is <a href="https://www.cloudflare.com/web-analytics/">cloudflare web analytics</a>. It also doesn't track the user and it is for free, what a great fit. I gave it a try and it does the job, I get the basic usage metrics for my website without having additional cost, no tracking of single users, no cookies and so on.</p>
+<p><em>Finally <a href="https://pages.github.com/">github pages</a> for hosting my website and <a href="https://www.cloudflare.com/web-analytics/">cloudflare web analytics</a> for getting basic insights about the usage of my website is a very good combination that is affordable and protects my users privacy.</em></p>
+
+</article>
+      </section>
+    </main>
+  </body>
+</html>
