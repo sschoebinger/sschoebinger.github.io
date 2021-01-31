@@ -1,6 +1,6 @@
 ---
 pageTitle: How to turn your smartphone into a webcam
-description: A description of how I turned my broken smartphone into a good webcam
+description: A description of how I turned my broken smartphone into a better webcam
 eleventyExcludeFromCollections: false
 ---
 
