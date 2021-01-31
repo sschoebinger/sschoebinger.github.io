@@ -15,12 +15,12 @@ All you need is
 1. Developer options enabled on your smartphone
 1. Your smartphone connected via USB to your laptop
 
-If you open both the Iriun app on your smartphone and the Iriun program on your laptop you'll get a video preview from your phones camera on your laptop. And as it is connected via USB the latency is very good.
+If you open both the Iriun app on your smartphone and the Iriun program on your laptop you'll get a video preview from your phones camera on your laptop. And as it is connected via USB the latency is very good (at least in my setup with Android and MacOS).
 
 <br/>
 <img src="/img/2021-01-31-iriun.jpg" alt="iriun on smartphone and laptop" style="width: 100%;" loading="lazy">
 <br/>
 
-As I wanted to use this new video source for my presentation in Microsoft Teams I had to follow [these instructions](https://answers.microsoft.com/en-us/msteams/forum/msteams_tfb-msteams_tfmac/microsoft-teams-mac-os-client-is-not-recognizing/d9e863be-d9a4-4d03-a4b8-1b5c7df58828), as by default Microsoft Teams on Mac OS X is not allowed to use that video source. I hope Apple or Iriun can solve that issue soon!
+As I wanted to use this new video source for my presentation in Microsoft Teams I had to follow [these instructions](https://answers.microsoft.com/en-us/msteams/forum/msteams_tfb-msteams_tfmac/microsoft-teams-mac-os-client-is-not-recognizing/d9e863be-d9a4-4d03-a4b8-1b5c7df58828), as by default Microsoft Teams on MacOS is not allowed to use that video source. I hope Apple or Iriun can solve that issue soon!
 
 This setup allowed me to reuse my broken smartphone as my webcam which has a much better camera as the laptop internal webcam. In addition I can chose much better perspectives than this standard "face from below" perspective. And last but not least I liked that by connecting the smartphone via USB the video latency is pretty good.
